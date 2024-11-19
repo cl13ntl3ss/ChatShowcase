@@ -1,0 +1,258 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hallo
+    - servus
+    - moin
+    - hallöchen
+    - guten tag
+    - hey
+    - guten morgen
+    - Hello
+    - good bye
+    - Hello
+    - Hello there
+    - good day
+    - hey
+    - Good morning
+
+- intent: goodbye
+  examples: |
+    - tschüss
+    - tschau
+    - bis später
+    - gute nacht
+    - bye
+    - goodbye
+    - einen schönen tag dir noch
+    - man sieht sich
+    - bye bye
+    - see you later
+    - tschüss
+    - tschau
+    - bis später
+    - gute nacht
+    - bye
+    - goodbye
+    - einen schönen tag dir noch
+    - man sieht sich
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - Bist du ein chatbot?
+    - Bist du ein Mensch
+    - Spreche ich mit einem Bot?
+    - spreche ich mit einem Menschen?
+    - Wer bist du?
+    - Was kannst du? 
+    - Was tust du? 
+    - Are you a chatbot?
+    - Are you human
+    - Am I talking to a bot?
+    - am I talking to a person?
+    - Who are you?
+    - What can you?
+    - What you are doing?
+    - what can you do?
+    - what are you capable of?
+    - what are you able to do?
+    
+- intent: weather
+  examples: |
+    - Wie warm wird es heute?
+    - Wie warm ist es jetzt
+    - Wie viel grad wird es morgen haben?
+    - Wie warm wird es morgen?
+    - Zeige mir die Temperatur für morgen
+    - Wie heiß wird es morgen?
+    - Wie kalt wird es morgen?
+    - Wie kalt wird es heute?
+    - Wie ist das Wetter?
+    - Wie warm ist es heute?
+    - Wie warm ist es?
+    - Wie ist das Wetter?
+    - Wie ist das Wetter heute?
+    - Wie wird das Wetter in 7 Tagen
+    - Wie wird das Wetter am Dienstag?
+    - Wetter heute
+    - Wetter morgen 
+    - Wetter mittwoch 
+    - Wetter am 2 Februar
+    - Wie wir das Wetter am 5 Februar um 16 Uhr?
+    - Wie wird das Wetter um 18 Uhr?
+    - Wie wird das Wetter um 20 Uhr?
+    - Wie wird das Wetter um 6 Uhr?
+    - How warm will it be today?
+    - How warm is it now
+    - How many degrees will it be tomorrow?
+    - How warm will it be tomorrow?
+    - Show me the temperature for tomorrow
+    - How hot will it be tomorrow?
+    - How cold will it be tomorrow?
+    - How cold will it be today?
+    - What's the weather like?
+    - How warm is it today?
+    - How warm is it?
+    - What's the weather like?
+    - How is the weather today?
+    - How will the weather be in 7 days
+    - How will the weather be on Tuesday?
+    - Weather today
+    - Weather tomorrow
+    - Weather Wednesday
+    - Weather on February 2nd
+    - How we the weather on February 5 at 4 p.m.?
+    - How will the weather be at 6 p.m.?
+    - How will the weather be at 8 p.m.?
+    - How will the weather be at 6 o'clock?
+    - What is the weather going to be like tomorrow at 6pm?
+
+- intent: city_weather
+  examples: |
+    - Zeige mir die Temperatur für morgen um 17 Uhr in Köln
+    - Wie ist die Temperatur heute in Amsterdam? 
+    - Wie warm wird es heute in München?
+    - Wie warm ist es jetzt in Berlin?
+    - Wie viel grad wird es morgen in New York haben?
+    - Wie warm wird es morgen in Sydney?
+    - Wie heiß ist es gerade in Pensyllvania?
+    - Zeige mir die Temperatur für morgen in Köln
+    - Wie heiß wird es morgen in Bielefeld?`
+    - Wie kalt wird es morgen in Rom?
+    - Wie kalt wird es heute in Dubai?
+    - Aktuelle Temperatur Würzburg
+    - Wie ist das Wetter in Budapest?
+    - Wie ist das Wetter in Prag?
+    - Wie warm ist es heute in Stuttgart?
+    - Wie warm ist es in Tokyo?
+    - Wie ist das Wetter in Singapur?
+    - Wie ist das Wetter heute in Madrid?
+    - Wetter Dienstag in Kassel
+    - Mainz Temperatur für Mittwoch um 16 Uhr
+    - Wie ist das Wetter in Berlin in 7 Tagen um 15 Uhr?
+    - Wie wird das Wetter am Montag um 15 Uhr in Berlin?
+    - Wie wird das Wetter morgen um 18 Uhr in Moskau?
+    - Wie ist die Temperatur heute in Amsterdam um 12 Uhr? 
+    - Wie warm wird es heute in München um 18 Uhr?
+    - Wie warm ist es jetzt gerade in New York?
+    - Wie viel grad wird es morgen in New York haben?
+    - Wie warm wird es morgen in Sydney?
+    - Wie heiß ist es gerade in Pensyllvania?
+    - Zeige mir die Temperatur für morgen in Köln
+    - Wie heiß wird es morgen in Bielefeld?`
+    - Wie kalt wird es morgen in Rom?
+    - Wie kalt wird es heute in Dubai?
+    - Aktuelle Temperatur Würzburg
+    - Wie ist das Wetter in Budapest?
+    - Wie ist das Wetter in Prag?
+    - Wie warm ist es heute in Stuttgart?
+    - Wie warm ist es in Tokyo?
+    - Wie ist das Wetter in Singapur?
+    - Wie ist das Wetter heute in Madrid?
+    - Wie wird das Wetter am 8 Februar um 17:45 in New Orleans?
+    - Wie wird das Wetter am 12 Februar um 12:15 in New York?
+    - Wie wird das Wetter morgen um 18 Uhr in München?
+    - Wie wird das Wetter in 7 Tagen in München?
+    - Wetter Dienstag in Kassel
+    - What is the temperature in Amsterdam today?
+    - How warm will it be in Munich today?
+    - How warm is it in Berlin now?
+    - How many degrees will it be in New York tomorrow?
+    - How warm will it be in Sydney tomorrow?
+    - How hot is it in Pennsylvania right now?
+    - Show me the temperature for tomorrow in Cologne
+    - How hot will it be in Bielefeld tomorrow?`
+    - How cold will it be in Rome tomorrow?
+    - How cold is it getting in Dubai today?
+    - Current temperature Wuerzburg
+    - How is the weather in Budapest?
+    - How is the weather in Prague?
+    - How warm is it in Stuttgart today?
+    - How warm is it in Tokyo?
+    - What's the weather like in Singapore?
+    - How is the weather today in Madrid?
+    - Weather Tuesday in Kassel
+    - Mainz temperature for Wednesday at 4 p.m
+    - How is the weather in Berlin in 7 days at 3 p.m.?
+    - How will the weather be on Monday at 3 p.m. in Berlin?
+    - What will the weather be like tomorrow at 6 p.m. in Moscow?
+    - What is the temperature today in Amsterdam at 12 o'clock?
+    - How warm will it be in Munich at 6 p.m. today?
+    - How warm is it in New York right now?
+    - How many degrees will it be in New York tomorrow?
+    - How warm will it be in Sydney tomorrow?
+    - How hot is it in Pennsylvania right now?
+    - Show me the temperature for tomorrow in Cologne
+    - How hot will it be in Bielefeld tomorrow?`
+    - How cold will it be in Rome tomorrow?
+    - How cold is it getting in Dubai today?
+    - Current temperature Wuerzburg
+    - How is the weather in Budapest?
+    - How is the weather in Prague?
+    - How warm is it in Stuttgart today?
+    - How warm is it in Tokyo?
+    - What's the weather like in Singapore?
+    - How is the weather today in Madrid?
+    - Weather Tuesday in Kassel
+
+- intent: other_day
+  examples: |
+    - und morgen?
+    - und in 7 Tagen?
+    - und heute?
+    - und montag?
+    - und Dienstag ? 
+    - und Mittwoch? 
+    - und am Freitag? 
+    - und am Samstag?
+    - und am Sonntag?
+    - und in 4 Tagen?
+    - und morgen um 17 uhr?
+    - und Freitag um 16 Uhr?
+    - und Mittwoch um 2 Uhr?
+    - und Sonntag um 21 Uhr?
+    - und heute um 15 Uhr?
+    - und Samstag um 12?
+    - and tomorrow?
+    - and in 7 days?
+    - and today?
+    - and monday?
+    - and Tuesday?
+    - and Wednesday?
+    - and on Friday?
+    - and on Saturday?
+    - and on Sunday?
+    - and in 4 days?
+    - and tomorrow at 5 p.m.?
+    - and Friday at 4 p.m.?
+    - and Wednesday at 2 o'clock?
+    - and Sunday at 9 p.m.?
+    - and today at 3 p.m.?
+    - and Saturday at 12?
+
+- intent: other_city
+  examples: |
+    - und in Bielefeld?
+    - und in Moskau?
+    - und in Berlin?
+    - und in Stockholm?
+    - und in London
+    - und in Köln?
+    - und in New York?
+    - und in Los Angeles?
+    - und in Paris?
+    - und in München?
+    - and in Bielefeld?
+    - and in Moscow?
+    - and in Berlin?
+    - and in Stockholm?
+    - and in London
+    - and in Cologne?
+    - and in New York?
+    - and in Los Angeles?
+    - and in Paris?
+    - and in Munich?

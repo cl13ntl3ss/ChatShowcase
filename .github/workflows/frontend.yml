@@ -1,0 +1,29 @@
+name: Publish Frontend Docker Image to DockerHub
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'AngularFrontend/**'
+    
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      -
+        name: Build & push Frontend Docker Image
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          directory: AngularFrontend/chatFE
+          image: cl13ntl3ss/chatbotfrontend
+          tags: latest
+          registry: docker.io
+          dockerfile: AngularFrontend/chatFE/Dockerfile
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}

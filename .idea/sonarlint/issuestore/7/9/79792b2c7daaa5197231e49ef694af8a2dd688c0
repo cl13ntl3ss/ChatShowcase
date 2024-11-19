@@ -1,0 +1,9 @@
+
+[	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(º—ß€
+E
+java:S3740%"/Provide the parametrized type for this generic.(º—ß€
+‚
+java:S1130%"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(º—ß€
+T
+java:S1172#">Remove these unused method parameters "response", "wsHandler".(ôÊÀÚ
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(‘ØçÁ

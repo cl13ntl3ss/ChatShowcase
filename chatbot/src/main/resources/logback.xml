@@ -1,0 +1,30 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %level %logger{35} %X{sessionId} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.classic.sift.SiftingAppender">
+
+        <discriminator>
+            <key>logName</key>
+            <defaultValue>test</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="FILE-${logName}" class="ch.qos.logback.core.FileAppender">
+                <file>logs</file>
+                <append>false</append>
+                <layout class="ch.qos.logback.classic.PatternLayout">
+                    <pattern>{"time":"%d{yyyy-MM-dd} %d{HH:mm:ss.SSS}","level":"%level","logger":"%logger{35}","sessionId":"%X{sessionId}","message":"%msg"}%n</pattern>
+                </layout>
+            </appender>
+        </sift>
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
